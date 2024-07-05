@@ -8,9 +8,10 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${lama})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "60% 50%",
+          backgroundSize: "80% 35%",
           backgroundAttachment: "fixed",
-          backgroundPositionX: "95%",
+          backgroundPositionX: "99%",
+          backgroundPositionY: "200px",
           backgroundPosition: "right",
         }}
         className="px-0"

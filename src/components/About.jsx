@@ -4,7 +4,7 @@ import zigzagPattern from "../images/zig.svg"; // Import the SVG
 
 const About = () => {
   return (
-    <div className="bg-dalai_red mt-10 pb-10 px-0">
+    <div className="bg-dalai_red pb-10 px-0">
       <div
         style={{
           backgroundImage: `url(${zigzagPattern})`,
