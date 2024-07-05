@@ -7,12 +7,24 @@ const Tokenomics = () => {
     <>
       <div className="bg-dalai_red">
         <div className="flex flex-col">
-          <div className="flex flex-col justify-center items-center my-10">
-            <div className="text-4xl font-extrabold  text-[#ffff] font-cust1 mb-10">
+          <div className="flex flex-col justify-center items-center mt-2">
+            <div className="text-4xl font-extrabold text-[#ffff] font-cust1">
               LAMANOMICS
             </div>
-            <img src={tokenomicWeb} width={1000} alt="" />
-            <img src="" alt="" />
+            {/* Display only on md and larger screens */}
+            <img
+              src={tokenomicWeb}
+              className="hidden md:block"
+              width={1000}
+              alt=""
+            />
+            {/* Display only on smaller than md screens */}
+            <img
+              src={tokenomicMobile}
+              className="md:hidden"
+              width={500}
+              alt=""
+            />
           </div>
           <div></div>
           <div className=" flex flex-row flex-wrap bg-serene_blue bg-opacity-30 p-3 rounded-2xl justify-between text-[#ffff]">
