@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Tokenomics from "./components/Tokenomics";
+import "@animxyz/core";
 
 const App = () => {
   return (

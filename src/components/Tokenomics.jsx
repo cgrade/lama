@@ -27,20 +27,23 @@ const Tokenomics = () => {
             />
           </div>
 
-          <div className="flex flex-row flex-wrap bg-serene_blue bg-opacity-30 p-3 rounded-2xl justify-between text-[#ffff] mx-10">
-            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5">
+          <div
+            className="flex flex-row flex-wrap bg-serene_blue bg-opacity-30 p-3 rounded-2xl justify-between text-[#ffff] mx-10"
+            xyz="fade flip-up flip-left"
+          >
+            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5 xyz-in">
               <p className="font-bold text-sm md:text-base">Total Supply</p>
               <p className="font-bold font-cust1 text-sm md:text-base">
                 100,000,000
               </p>
             </div>
-            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5">
+            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5 xyz-in">
               <p className="font-bold text-sm md:text-base">Liquidity</p>
               <p className="font-bold font-cust1 text-sm md:text-base">
                 Burned
               </p>
             </div>
-            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5">
+            <div className="mx-2 px-4 my-3 md:mx-10 md:px-10 md:my-5 xyz-in">
               <p className="font-bold text-sm md:text-base">CA</p>
               <p className="font-bold font-cust1 text-sm md:text-base">TBA</p>
             </div>
