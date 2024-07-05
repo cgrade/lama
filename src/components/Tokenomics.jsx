@@ -45,11 +45,11 @@ const Tokenomics = () => {
               <p className="font-bold font-cust1 text-sm md:text-base">TBA</p>
             </div>
           </div>
-          <div>
+          {/* <div>
             Join our pride and become a part of the Mufasa Journey to the moon.
             Whether you're here to hodl, create, or simply enjoy the memes,
             there's a place for you in our jungle.
-          </div>
+          </div> */}
         </div>
         <div>
           <div className="text-3xl font-extrabold pt-10 pl-5 text-[#ffff] font-cust1">
