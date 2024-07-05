@@ -1,6 +1,5 @@
 import React from "react";
 import lama from "../images/grass.png";
-import "../style/style.css";
 
 const Hero = () => {
   return (
@@ -9,9 +8,12 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${lama})`,
           backgroundRepeat: "no-repeat",
+          backgroundSize: "60% 50%",
           backgroundAttachment: "fixed",
+          backgroundPositionX: "95%",
+          backgroundPosition: "right",
         }}
-        className="background-image px-0"
+        className="px-0"
       >
         <div className="flex justify-center mt-28">
           <p className="text-3xl md:text-7xl font-extrabold font-cust1 text-dalai_red m-8">
