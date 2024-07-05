@@ -1,0 +1,12 @@
+/* In your CSS file */
+.background-image {
+    background-size: 100% 250px;
+    background-position: center;
+  }
+  
+  @media (max-width: 768px) {
+    .background-image {
+      background-size: 90% 30%;
+      background-position: center;
+    }
+  }
