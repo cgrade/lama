@@ -15,7 +15,7 @@ const Nav = () => {
           <p>How to buy</p>
         </div>
         <div className="flex justify-end w-full md:w-auto">
-          <button className="border-2 rounded-lg px-3 border-serene_blue  text-serene_blue">
+          <button className="border-4 rounded-lg px-5 py-0 border-serene_blue  text-serene_blue">
             BUY $LAMA
           </button>
         </div>

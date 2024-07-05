@@ -16,7 +16,7 @@ const Hero = () => {
         className="px-10"
       >
         <div className="flex justify-center mt-28">
-          <p className="text-4xl md:text-7xl font-extrabold font-cust1 text-dalai_red m-8">
+          <p className="text-3xl md:text-7xl font-extrabold font-cust1 text-dalai_red m-8">
             UNCLE LAMA
           </p>
         </div>
