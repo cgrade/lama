@@ -185,7 +185,7 @@ const Tokenomics = () => {
               ROADMAP
             </div>
           </div>
-          <div className="m-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div className="m-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 -inset-10gap-6 gap-y-4">
             {/* Phase 1 */}
             <div
               onClick={() => toggleSpin("phase1")}
@@ -210,105 +210,115 @@ const Tokenomics = () => {
             {/* Phase 2 */}
             <div
               onClick={() => toggleSpin("phase2")}
-              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-40 rotate-6 rounded-xl font-cust text-dalai_red ${
                 spinStates.phase2 ? "spin" : ""
               }`}
             >
-              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <div className="flex justify-center font-extrabold">Phase 2</div>
               <br />
               <div className="flex justify-center">
-                Community Building (Months 1-3)
+                Token and Wallet Development (Months 4-6)
               </div>{" "}
               <br />
               <ul>
-                <li>Project Inception and Planning:</li> <br />
-                <li>Community Outreach:</li>
+                <li>Community Token Creation</li> <br />
+                <li>Pre-launch Marketing</li>
                 <br />
-                <li>Initial Content Release:</li>
+                <li>Token Launch</li>
+                <br />
+                <li>Crypto Wallet Development</li>
+                <br />
+                <li>Wallet Launch</li>
               </ul>
             </div>
 
             {/* Phase 3 */}
             <div
               onClick={() => toggleSpin("phase3")}
-              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-30 rotate-6 rounded-xl font-cust text-dalai_red ${
                 spinStates.phase3 ? "spin" : ""
               }`}
             >
-              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <div className="flex justify-center font-extrabold">Phase 3</div>
               <br />
               <div className="flex justify-center">
-                Community Building (Months 1-3)
+                Early Engagement & NFT Launch (Months 7-9)
               </div>{" "}
               <br />
               <ul>
-                <li>Project Inception and Planning:</li> <br />
+                <li>NFT Development</li> <br />
                 <li>Community Outreach:</li>
                 <br />
-                <li>Initial Content Release:</li>
+                <li>Staking and Rewards Program</li>
+                <br />
+                <li>NFT Launch</li>
               </ul>
             </div>
 
             {/* Phase 4 */}
             <div
               onClick={() => toggleSpin("phase4")}
-              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-20 rotate-6 rounded-xl font-cust text-dalai_red ${
                 spinStates.phase4 ? "spin" : ""
               }`}
             >
-              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <div className="flex justify-center font-extrabold">Phase 4</div>
               <br />
               <div className="flex justify-center">
-                Community Building (Months 1-3)
+                Exclusive Access and Virtual Experiences (Months 10-12)
               </div>{" "}
               <br />
               <ul>
-                <li>Project Inception and Planning:</li> <br />
-                <li>Community Outreach:</li>
+                <li>Exclusive Content and Events:</li> <br />
+                <li>Augmented Reality (AR) Experiences</li>
                 <br />
-                <li>Initial Content Release:</li>
+                <li>Private Forums and Groups</li>
               </ul>
             </div>
 
             {/* Phase 5 */}
             <div
               onClick={() => toggleSpin("phase5")}
-              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-10 rotate-6 rounded-xl font-cust text-dalai_red ${
                 spinStates.phase5 ? "spin" : ""
               }`}
             >
-              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <div className="flex justify-center font-extrabold">Phase 5</div>
               <br />
               <div className="flex justify-center">
-                Community Building (Months 1-3)
+                Merchandise Store & Charity Integration (Months 13-18)
               </div>{" "}
               <br />
               <ul>
-                <li>Project Inception and Planning:</li> <br />
-                <li>Community Outreach:</li>
+                <li>Merchandise Store and Charity Integraton</li> <br />
+                <li>Merchandise Store</li>
                 <br />
-                <li>Initial Content Release:</li>
+                <li>Educational Content</li>
+                <br />
+                <li>Charity and Donations Platform</li>
               </ul>
             </div>
 
             {/* Phase 6 */}
             <div
               onClick={() => toggleSpin("phase6")}
-              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-0 rotate-6 rounded-xl font-cust text-dalai_red ${
                 spinStates.phase6 ? "spin" : ""
               }`}
             >
-              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <div className="flex justify-center font-extrabold">Phase 6</div>
               <br />
               <div className="flex justify-center">
-                Community Building (Months 1-3)
+                Metaverse Integration and Continuous Improvement (Months 19-24)
               </div>{" "}
               <br />
               <ul>
-                <li>Project Inception and Planning:</li> <br />
-                <li>Community Outreach:</li>
+                <li>Metaverse Integration</li> <br />
+                <li>Community Governance</li>
                 <br />
-                <li>Initial Content Release:</li>
+                <li>Loyalty Programs</li>
+                <br />
+                <li>Ongoing Development</li>{" "}
               </ul>
             </div>
           </div>
