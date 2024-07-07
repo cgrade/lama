@@ -1,8 +1,26 @@
 import React from "react";
 import tokenomicWeb from "../images/tokenomicWeb.png";
 import tokenomicMobile from "../images/tokenomicMobile.png";
+import { useState } from "react";
+import "../styles/token.css";
 
 const Tokenomics = () => {
+  // manage spin states
+  const [spinStates, setSpinStates] = useState({
+    phase1: false,
+    phase2: false,
+    phase3: false,
+    phase4: false,
+    phase5: false,
+    phase6: false,
+  });
+
+  const toggleSpin = (phase) => {
+    setSpinStates((prevState) => ({
+      ...prevState,
+      [phase]: !prevState[phase],
+    }));
+  };
   return (
     <>
       <div className="bg-dalai_red">
@@ -55,17 +73,243 @@ const Tokenomics = () => {
           </div> */}
         </div>
         <div>
-          <div className="text-3xl font-extrabold pt-10 pl-5 text-[#ffff] font-cust1">
-            Lama Utilities
+          <div className="flex justify-center text-3xl font-extrabold pt-10 pl-5 text-[#ffff] font-cust1 my-8">
+            $Lama Utilities
           </div>
+
           <div>
             <div>
-              <div></div>
-              <div></div>
+              <div className="flex justify-center text-[#ffff] font-cust bg-serene_blue bg-opacity-10 shadow-4xl mx-10 p-3 rounded-2xl border border-gold">
+                To create a sense of exclusivity and engagement for community
+                members, $LAMA offers the following types of access:
+              </div>
             </div>
-            <div>
-              <div></div>
-              <div></div>
+            <div className="flex flex-col md:flex-row m-10 md:space-x-10">
+              <div className="  bg-gold bg-gradient-to-bl from-dalai_red font-cust text-[#fff] bg-opacity-40 p-5 rounded-2xl drop-shadow-2xl mb-5">
+                <ul>
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Behind-the-Scenes Content:
+                    </span>{" "}
+                    Provide members with exclusive videos, photos, and updates
+                    on the development and progress of the Uncle Lama project.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Early Access :{" "}
+                    </span>
+                    Allow community members to preview new content, features, or
+                    products before they are released to the general public.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Exclusive Events :{" "}
+                    </span>{" "}
+                    Host special events such as virtual meet-and-greets, Q&A
+                    sessions, or live streams with the creators and other
+                    influential figures involved in the project.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Special Merchandise :{" "}
+                    </span>
+                    Special Offer limited-edition or exclusive Uncle Lama
+                    merchandise that is only available to community members.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Interactive Experiences :{" "}
+                    </span>{" "}
+                    Create interactive experiences or activities, like guided
+                    meditation sessions, mindfulness workshops, or storytelling
+                    events featuring Uncle Lama.
+                  </li>
+                </ul>
+              </div>
+              <div className="  bg-gold bg-gradient-to-bl from-dalai_red font-cust text-[#fff] bg-opacity-40 p-5 rounded-2xl drop-shadow-2xl mb-5">
+                <ul>
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Behind-the-Scenes Content:
+                    </span>{" "}
+                    Provide members with exclusive videos, photos, and updates
+                    on the development and progress of the Uncle Lama project.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Early Access :{" "}
+                    </span>
+                    Allow community members to preview new content, features, or
+                    products before they are released to the general public.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Exclusive Events :{" "}
+                    </span>{" "}
+                    Host special events such as virtual meet-and-greets, Q&A
+                    sessions, or live streams with the creators and other
+                    influential figures involved in the project.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Special Merchandise :{" "}
+                    </span>
+                    Special Offer limited-edition or exclusive Uncle Lama
+                    merchandise that is only available to community members.
+                  </li>
+                  <br />
+                  <li>
+                    <span className="font-extrabold text-gold">
+                      Interactive Experiences :{" "}
+                    </span>{" "}
+                    Create interactive experiences or activities, like guided
+                    meditation sessions, mindfulness workshops, or storytelling
+                    events featuring Uncle Lama.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-2">
+          <div className="flex justify-center">
+            <div className="text-4xl font-extrabold text-[#ffff] font-cust1">
+              ROADMAP
+            </div>
+          </div>
+          <div className="m-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            {/* Phase 1 */}
+            <div
+              onClick={() => toggleSpin("phase1")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase1 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
+            </div>
+
+            {/* Phase 2 */}
+            <div
+              onClick={() => toggleSpin("phase2")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase2 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
+            </div>
+
+            {/* Phase 3 */}
+            <div
+              onClick={() => toggleSpin("phase3")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase3 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
+            </div>
+
+            {/* Phase 4 */}
+            <div
+              onClick={() => toggleSpin("phase4")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase4 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
+            </div>
+
+            {/* Phase 5 */}
+            <div
+              onClick={() => toggleSpin("phase5")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase5 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
+            </div>
+
+            {/* Phase 6 */}
+            <div
+              onClick={() => toggleSpin("phase6")}
+              className={`bg-serene_blue bg-gradient-to-br from-[#ffff] drop-shadow-2xl p-5 z-50 rotate-6 rounded-xl font-cust text-dalai_red ${
+                spinStates.phase6 ? "spin" : ""
+              }`}
+            >
+              <div className="flex justify-center font-extrabold">Phase 1</div>
+              <br />
+              <div className="flex justify-center">
+                Community Building (Months 1-3)
+              </div>{" "}
+              <br />
+              <ul>
+                <li>Project Inception and Planning:</li> <br />
+                <li>Community Outreach:</li>
+                <br />
+                <li>Initial Content Release:</li>
+              </ul>
             </div>
           </div>
         </div>
