@@ -8,7 +8,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${lama})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "80% 35%",
+          backgroundSize: "60% 34%",
           backgroundAttachment: "fixed",
           backgroundPositionX: "99%",
           backgroundPositionY: "200px",
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex">
-          <p className=" justify-center text-center px-2 md:px-40">
+          <p className=" justify-center text-center px-2 md:px-40 font-cust">
             Uncle Lama is a unique and captivating character inspired by the
             revered Dalai Lama, blending the serene wisdom of Buddhism with the
             approachable charm of a llama. The project uses a Lama animal
@@ -31,10 +31,10 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex justify-center mt-5 md:mt-10">
-          <button className="border-4 px-2 md:px-10 py-2 m-5 border-dalai_red">
+          <button className="border-4 px-2 md:px-10 py-2 m-5 border-dalai_red rounded-full font-cust hover:bg-serene_blue">
             Join Lama
           </button>
-          <button className="border-4 px-6 md:px-14 py-2 md:py-4 m-5 border-dalai_red">
+          <button className="border-4 px-6 md:px-14 py-2 md:py-4 m-5 border-dalai_red rounded-full font-cust hover:bg-serene_blue">
             Chart
           </button>
         </div>
